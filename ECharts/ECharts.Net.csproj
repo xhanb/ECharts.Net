@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>xhanb</Authors>
+    <Company />
+    <Description>Based on ECharts(https://ecomfe.github.io/echarts-doc/public/en/index.html) tool library,support.NET Framework and.NET Core
+</Description>
+    <AssemblyName>ECharts.Net</AssemblyName>
+    <RootNamespace>ECharts.Net</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+</Project>
