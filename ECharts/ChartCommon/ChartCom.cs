@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartCommon
+﻿namespace ECharts.Net.ChartCommon
 {
     public class ChartCom
     {

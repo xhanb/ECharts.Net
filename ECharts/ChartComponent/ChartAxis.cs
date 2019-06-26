@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using EChartPackage.ChartCommon;
+using ECharts.Net.ChartCommon;
 
-namespace EChartPackage.ChartComponent
+namespace ECharts.Net.ChartComponent
 {
     /// <summary>
     /// 坐标轴(个别选项仅在个别类型时有效)

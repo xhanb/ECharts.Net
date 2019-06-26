@@ -1,6 +1,6 @@
-﻿using EChartPackage.ChartCommon;
+﻿using ECharts.Net.ChartCommon;
 
-namespace EChartPackage.ChartComponent
+namespace ECharts.Net.ChartComponent
 {
     /// <summary>
     /// 工具箱，每个图表最多仅有一个工具箱

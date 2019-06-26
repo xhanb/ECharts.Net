@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EChartPackage.ChartSeries
+namespace ECharts.Net.ChartSeries
 {
     /// <summary>
     /// 适用类型:雷达图

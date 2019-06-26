@@ -1,7 +1,6 @@
-﻿
-using EChartPackage.ChartComponent;
+﻿using ECharts.Net.ChartComponent;
 
-namespace EChartPackage.ChartSeries
+namespace ECharts.Net.ChartSeries
 {
     /// <summary>
     /// 仪表盘

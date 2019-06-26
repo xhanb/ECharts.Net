@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using EChartPackage.ChartCommon;
+using ECharts.Net.ChartCommon;
 
-namespace EChartPackage.ChartSeries
+namespace ECharts.Net.ChartSeries
 {
     /// <summary>
     /// 适用类型:和弦图

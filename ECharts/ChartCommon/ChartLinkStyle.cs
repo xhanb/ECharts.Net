@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartCommon
+﻿namespace ECharts.Net.ChartCommon
 {
     /// <summary>
     /// 力导向图中的边样式

@@ -1,6 +1,6 @@
-﻿using EChartPackage.ChartCommon;
+﻿using ECharts.Net.ChartCommon;
 
-namespace EChartPackage.ChartComponent
+namespace ECharts.Net.ChartComponent
 {
     /// <summary>
     /// 提示框，鼠标悬浮交互时的信息提示。

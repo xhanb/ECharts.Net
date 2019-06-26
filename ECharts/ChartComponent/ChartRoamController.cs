@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartComponent
+﻿namespace ECharts.Net.ChartComponent
 {
     /// <summary>
     /// 缩放漫游组件，仅对地图有效 (暂不做处理)

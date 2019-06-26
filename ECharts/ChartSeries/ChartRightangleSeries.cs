@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartSeries
+﻿namespace ECharts.Net.ChartSeries
 {
     /// <summary>
     /// series（直角系）

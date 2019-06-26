@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartCommon
+﻿namespace ECharts.Net.ChartCommon
 {
     /// <summary>
     /// 图形样式，可设置图表内图形的默认样式和强调样式

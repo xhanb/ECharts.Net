@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartCommon
+﻿namespace ECharts.Net.ChartCommon
 {
     /// <summary>
     /// 标签视觉引导线

@@ -1,6 +1,6 @@
-﻿using EChartPackage.ChartCommon;
+﻿using ECharts.Net.ChartCommon;
 
-namespace EChartPackage.ChartComponent
+namespace ECharts.Net.ChartComponent
 {
     /// <summary>
     /// 标题，每个图表最多仅有一个标题控件，每个标题控件可设主副标题。

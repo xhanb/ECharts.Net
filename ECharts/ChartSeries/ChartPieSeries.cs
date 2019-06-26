@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartSeries
+﻿namespace ECharts.Net.ChartSeries
 {
     /// <summary>
     /// 适用类型:饼图

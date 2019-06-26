@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using EChartPackage.ChartCommon;
+using ECharts.Net.ChartCommon;
 
-namespace EChartPackage.ChartComponent
+namespace ECharts.Net.ChartComponent
 {
     /// <summary>
     /// 时间轴，每个图表最多仅有一个时间轴控件

@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartCommon
+﻿namespace ECharts.Net.ChartCommon
 {
     /// <summary>
     /// 和弦图中的弦样式 

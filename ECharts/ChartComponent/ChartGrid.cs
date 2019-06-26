@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartComponent
+﻿namespace ECharts.Net.ChartComponent
 {
     /// <summary>
     /// 直角坐标系内绘图网格

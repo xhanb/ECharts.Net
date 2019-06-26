@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using EChartPackage.ChartCommon;
+using ECharts.Net.ChartCommon;
 
-namespace EChartPackage.ChartComponent
+namespace ECharts.Net.ChartComponent
 {
     /// <summary>
     /// 图例，每个图表最多仅有一个图例。

@@ -1,4 +1,4 @@
-﻿namespace EChartPackage.ChartComponent
+﻿namespace ECharts.Net.ChartComponent
 {
     /// <summary>
     /// 数据区域缩放。与toolbox.feature.dataZoom同步，仅对直角坐标系图表有效。
