@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using EChartPackage;
 using ECharts.Net.ChartCommon;
 using ECharts.Net.ChartComponent;
 using ECharts.Net.ChartSeries;

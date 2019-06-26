@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Formatting = System.Xml.Formatting;
 
-namespace EChartPackage
+namespace ECharts.Net
 {
     /// <summary>
     /// json辅助

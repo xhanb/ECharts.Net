@@ -1,19 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net45;</TargetFrameworks>
     <Authors>xhanb</Authors>
     <Company />
     <Description>Based on ECharts library,support.NET Framework and.NET Core
 </Description>
     <AssemblyName>ECharts.Net</AssemblyName>
     <RootNamespace>ECharts.Net</RootNamespace>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://github.com/xhanb/ECharts.Net</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DocumentationFile>D:\Projects\ECharts\ECharts\ECharts.Net.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
