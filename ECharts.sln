@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECharts", "ECharts\ECharts.csproj", "{780B0777-B66E-4A22-B0D1-BBC3B5A36347}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{780B0777-B66E-4A22-B0D1-BBC3B5A36347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780B0777-B66E-4A22-B0D1-BBC3B5A36347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780B0777-B66E-4A22-B0D1-BBC3B5A36347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780B0777-B66E-4A22-B0D1-BBC3B5A36347}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88C60675-8A54-4F69-BD76-24EF52C8AB26}
+	EndGlobalSection
+EndGlobal
