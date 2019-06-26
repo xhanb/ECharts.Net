@@ -8,7 +8,7 @@
 </Description>
     <AssemblyName>ECharts.Net</AssemblyName>
     <RootNamespace>ECharts.Net</RootNamespace>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://github.com/xhanb/ECharts.Net</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
