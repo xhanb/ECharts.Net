@@ -6,3 +6,7 @@
 
 ## Tips
 Based on [Echarts2.0](https://echarts.baidu.com/echarts2/doc/doc.html)
+
+## How to use?
+操作类ChartOpertation提供各种图表的静态方法：
+### 饼状图：ChartPieDataProcess
