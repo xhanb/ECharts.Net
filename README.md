@@ -9,4 +9,10 @@ Based on [Echarts2.0](https://echarts.baidu.com/echarts2/doc/doc.html)
 
 ## How to use?
 操作类ChartOpertation提供各种图表的静态方法：
-### 饼状图：ChartPieDataProcess
+#### 饼状图：ChartPieDataProcess
+#### 线性图：ChartLineDataProcess
+#### 时间轴线性图：TimeLineChartLineDataProcess
+#### 柱状图：ChartBarDataProcess
+#### 折柱混搭：ChartBarAndLineDataProcess
+#### 条形图：ChartTiaoBarDataProcess
+#### 多维条形图：ChartDuoWeiTiaoBarDataProcess
