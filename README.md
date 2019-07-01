@@ -9,7 +9,7 @@
 Based on [Echarts2.0](https://echarts.baidu.com/echarts2/doc/doc.html)
 
 ## How to use?
-操作类ChartOpertation提供各种图表的静态方法：
+该类库包含Echarts2.0版本的所有基本类型，操作类**ChartOpertation**提供以下图表的静态方法，未列出的可以自己实现或者创建分支一起完善
 #### 饼状图：ChartPieDataProcess
 #### 线性图：ChartLineDataProcess
 #### 时间轴线性图：TimeLineChartLineDataProcess
