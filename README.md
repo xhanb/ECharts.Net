@@ -5,4 +5,4 @@
 [![GitHub](https://img.shields.io/github/license/xhanb/ECharts.Net.svg)](https://github.com/xhanb/ECharts.Net/blob/master/LICENSE)
 
 ## Tips
-Based on[Echarts2.0](https://echarts.baidu.com/echarts2/doc/doc.html)构建
+Based on [Echarts2.0](https://echarts.baidu.com/echarts2/doc/doc.html)
