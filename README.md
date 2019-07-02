@@ -19,7 +19,7 @@ Based on [Echarts2.0](https://echarts.baidu.com/echarts2/doc/doc.html)
 #### 多维条形图：ChartDuoWeiTiaoBarDataProcess
 
 ## Demo
-```
+```C#
 ChartPieSeries cps = new ChartPieSeries();
 cps.name = "pie demo";
 cps.radius = 90;
@@ -48,4 +48,4 @@ List<ChartPieSeries> cpss = new List<ChartPieSeries>();
 cpss.Add(cps); 
 
 string str = ChartOpertation.ChartPieDataProcess(cpss, legend, true, "pie demo", "subtext", true);
-```
+```C#
