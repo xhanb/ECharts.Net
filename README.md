@@ -48,4 +48,4 @@ List<ChartPieSeries> cpss = new List<ChartPieSeries>();
 cpss.Add(cps); 
 
 string str = ChartOpertation.ChartPieDataProcess(cpss, legend, true, "pie demo", "subtext", true);
-```C#
+```
