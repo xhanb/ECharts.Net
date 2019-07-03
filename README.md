@@ -3,6 +3,7 @@
 [![](https://img.shields.io/badge/.Net%20Standard%20-2.0-brightgreen.svg)](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) 
 [![Nuget](https://img.shields.io/nuget/dt/ECharts.Net.svg)](https://www.nuget.org/packages/ECharts.Net)
 [![Build status](https://ci.appveyor.com/api/projects/status/xpeenxwe98ix0l1o/branch/master?svg=true)](https://ci.appveyor.com/project/xhanb/echarts-net/branch/master)
+[![GitHub release](https://img.shields.io/github/release/xhanb/ECharts.Net.svg)](https://github.com/xhanb/ECharts.Net/releases)
 [![GitHub](https://img.shields.io/github/license/xhanb/ECharts.Net.svg)](https://github.com/xhanb/ECharts.Net/blob/master/LICENSE)
 
 ## Tips
