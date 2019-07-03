@@ -1,5 +1,0 @@
-language: csharp
-solution: ECharts.sln
-mono: none
-dotnet: 2.2
-script:dotnet build
