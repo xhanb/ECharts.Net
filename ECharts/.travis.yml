@@ -2,3 +2,5 @@ language: csharp
 solution: ECharts.sln
 mono: none
 dotnet: 2.2
+install:nuget restore ECharts.sln
+script:msbuild /p:Configuration=Release ECharts.sln
