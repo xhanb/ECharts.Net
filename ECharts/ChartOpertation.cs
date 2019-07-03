@@ -320,6 +320,8 @@ namespace ECharts.Net
         /// <param name="isShowLengend">是否开启图例</param>
         /// <param name="chartSubTitle">副标题文本，默认值：''，'\n'指定换行</param>
         /// <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
+        /// <param name="isShowY1AxisTick">是否显示Y轴坐标轴小标记</param>
+        /// <param name="isShowY1AxisLine">是否显示坐标轴线</param>
         /// <returns>图表所有数据</returns>
         public static string ChartTiaoBarDataProcess(string chartTitle, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, ChartGrid chartGrid, bool isShowX = false, bool isShowY = true, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, bool isShowY1AxisTick = false, bool isShowY1AxisLine = false)
         {
