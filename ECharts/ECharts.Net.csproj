@@ -8,7 +8,7 @@
 </Description>
     <AssemblyName>ECharts.Net</AssemblyName>
     <RootNamespace>ECharts.Net</RootNamespace>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <PackageProjectUrl>https://xhanb.github.io/ECharts.Net/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xhanb/ECharts.Net</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -17,6 +17,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReleaseNotes>Bug fixes and performance improvements</PackageReleaseNotes>
     <PackageTags>echart,ECharts,ECharts.Net</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/xhanb/ECharts.Net/master/ECharts/logo.png</PackageIconUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
