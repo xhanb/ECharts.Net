@@ -7,7 +7,7 @@
     <Description>Based on ECharts(https://echarts.baidu.com/echarts2/doc/doc.html) tool library,support .NET Framework and .NET Core</Description>
     <AssemblyName>ECharts.Net</AssemblyName>
     <RootNamespace>ECharts.Net</RootNamespace>
-    <Version>1.0.8</Version>
+    <Version>1.0.9</Version>
     <PackageProjectUrl>https://xhanb.github.io/ECharts.Net/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xhanb/ECharts.Net</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -19,7 +19,7 @@
     <PackageIconUrl>https://raw.githubusercontent.com/xhanb/ECharts.Net/master/ECharts/logo.png</PackageIconUrl>
     <DocumentationFile>D:\Projects\ECharts\ECharts\ECharts.Net.xml</DocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
   <ItemGroup>

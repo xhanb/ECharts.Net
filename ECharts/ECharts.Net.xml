@@ -3519,12 +3519,5 @@
             <param name="obj">object</param>
             <returns></returns>
         </member>
-        <member name="M:ECharts.Net.JsonHelper.JsonToList(System.String)">
-            <summary>
-            json字符串数组转换为List
-            </summary>
-            <param name="str">json字符串数组</param>
-            <returns></returns>
-        </member>
     </members>
 </doc>
