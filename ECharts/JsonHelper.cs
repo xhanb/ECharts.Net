@@ -11,17 +11,23 @@ namespace ECharts.Net
     {
         /// <summary>
         /// object转json（包含日期格式处理）
-        /// </summary>
+        /// </summary>  
         /// <param name="obj">object</param>
         /// <returns></returns>
         public static string ToJson(this object obj)
         {
+#if NETSTANDARD2_0
+            var op = new System.Text.Json.Serialization.JsonSerializerOptions { IgnoreNullValues = true, WriteIndented = true };
+            return System.Text.Json.Serialization.JsonSerializer.ToString(obj, op);
+#else
             var jSetting = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
             var json = JsonConvert.SerializeObject(obj, (Newtonsoft.Json.Formatting)Formatting.Indented, jSetting);
             var data = JsonConvert.DeserializeObject(json, typeof(object), jSetting);
             var timeConverter = new Newtonsoft.Json.Converters.IsoDateTimeConverter { DateTimeFormat = "yyyy'-'MM'-'dd hh:mm" };
             json = JsonConvert.SerializeObject(data, (Newtonsoft.Json.Formatting)Formatting.Indented, timeConverter); 
             return json;
+#endif
+
         }
 
         /// <summary>

@@ -3515,7 +3515,7 @@
         <member name="M:ECharts.Net.JsonHelper.ToJson(System.Object)">
             <summary>
             object转json（包含日期格式处理）
-            </summary>
+            </summary>  
             <param name="obj">object</param>
             <returns></returns>
         </member>
