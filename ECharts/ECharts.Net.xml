@@ -2488,19 +2488,20 @@
             图表操作数据处理类
             </summary>
         </member>
-        <member name="M:ECharts.Net.ChartOpertation.ChartPieDataProcess(System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartPieSeries},System.Collections.Generic.List{System.String},System.Boolean,System.String,System.String,System.Boolean)">
+        <member name="M:ECharts.Net.ChartOpertation.ChartPieDataProcess(System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartPieSeries},System.Collections.Generic.List{System.String},System.Boolean,System.String,System.String,System.Boolean,System.String)">
             <summary>
             饼状图数据处理
             </summary>
-            <param name="lengendData">图例数据</param>
             <param name="seriesData">图表数据</param>
+            <param name="lengendData">图例数据</param>
             <param name="isShowLengend">是否开启图例</param>
             <param name="chartTitle">主标题文本，默认值：''，'\n'指定换行</param>
             <param name="chartSubTitle"> 副标题文本，默认值：''，'\n'指定换行</param>
             <param name="isCalculable"> 是否启用拖拽重计算特性，默认关闭</param>
+            <param name="dateTimeFormat"></param>
             <returns></returns>
         </member>
-        <member name="M:ECharts.Net.ChartOpertation.ChartLineDataProcess(System.String,System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},System.Boolean,System.String,System.Boolean,System.String)">
+        <member name="M:ECharts.Net.ChartOpertation.ChartLineDataProcess(System.String,System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},System.Boolean,System.String,System.Boolean,System.String,System.String)">
             <summary>
             线性图数据处理
             </summary>
@@ -2513,9 +2514,10 @@
             <param name="chartSubTitle">副标题文本，默认值：""，"\n"指定换行</param>
             <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
             <param name="chartYAxisName">Y轴名称</param>
+            <param name="dateTimeFormat"></param>
             <returns>图表所有数据</returns>
         </member>
-        <member name="M:ECharts.Net.ChartOpertation.TimeLineChartLineDataProcess(System.String,System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},System.Boolean,System.String,System.Boolean,System.String,ECharts.Net.ChartComponent.ChartTimeline)">
+        <member name="M:ECharts.Net.ChartOpertation.TimeLineChartLineDataProcess(System.String,System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},System.Boolean,System.String,System.Boolean,System.String,ECharts.Net.ChartComponent.ChartTimeline,System.String)">
             <summary>
             时间轴线性图数据处理
             </summary>
@@ -2529,9 +2531,10 @@
             <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
             <param name="chartYAxisName">Y轴名称</param>
             <param name="chartTimeline">时间轴</param>
+            <param name="dateTimeFormat"></param>
             <returns>图表所有数据</returns>
         </member>
-        <member name="M:ECharts.Net.ChartOpertation.ChartBarDataProcess(System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},ECharts.Net.ChartComponent.ChartGrid,System.Boolean,System.String,System.Boolean,System.String)">
+        <member name="M:ECharts.Net.ChartOpertation.ChartBarDataProcess(System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},ECharts.Net.ChartComponent.ChartGrid,System.Boolean,System.String,System.Boolean,System.String,System.String)">
             <summary>
             柱状图数据处理
             </summary>
@@ -2544,9 +2547,10 @@
             <param name="chartSubTitle">副标题文本，默认值：''，'\n'指定换行</param>
             <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
             <param name="chartYAxisName">Y轴名称</param>
+            <param name="dateTimeFormat"></param>
             <returns>图表所有数据</returns>
         </member>
-        <member name="M:ECharts.Net.ChartOpertation.ChartBarAndLineDataProcess(System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},System.Collections.Generic.List{ECharts.Net.ChartComponent.ChartAxis},ECharts.Net.ChartComponent.ChartGrid,System.Boolean,System.String,System.Boolean)">
+        <member name="M:ECharts.Net.ChartOpertation.ChartBarAndLineDataProcess(System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},System.Collections.Generic.List{ECharts.Net.ChartComponent.ChartAxis},ECharts.Net.ChartComponent.ChartGrid,System.Boolean,System.String,System.Boolean,System.String)">
             <summary>
             折柱混搭
             </summary>
@@ -2559,9 +2563,10 @@
             <param name="isShowLengend"></param>
             <param name="chartSubTitle"></param>
             <param name="isCalculable"></param>
+            <param name="dateTimeFormat"></param>
             <returns></returns>
         </member>
-        <member name="M:ECharts.Net.ChartOpertation.ChartTiaoBarDataProcess(System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},ECharts.Net.ChartComponent.ChartGrid,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean,System.Boolean,System.Boolean)">
+        <member name="M:ECharts.Net.ChartOpertation.ChartTiaoBarDataProcess(System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},System.Collections.Generic.List{System.String},ECharts.Net.ChartComponent.ChartGrid,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean,System.Boolean,System.Boolean,System.String)">
             <summary>
             条形图数据处理
             </summary>
@@ -2577,9 +2582,10 @@
             <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
             <param name="isShowY1AxisTick">是否显示Y轴坐标轴小标记</param>
             <param name="isShowY1AxisLine">是否显示坐标轴线</param>
+            <param name="dateTimeFormat"></param>
             <returns>图表所有数据</returns>
         </member>
-        <member name="M:ECharts.Net.ChartOpertation.ChartDuoWeiTiaoBarDataProcess(System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},ECharts.Net.ChartComponent.ChartLegend,ECharts.Net.ChartComponent.ChartGrid,System.String,System.Boolean)">
+        <member name="M:ECharts.Net.ChartOpertation.ChartDuoWeiTiaoBarDataProcess(System.String,System.Collections.Generic.List{System.Object},System.Collections.Generic.IEnumerable{ECharts.Net.ChartSeries.ChartRightangleSeries},ECharts.Net.ChartComponent.ChartLegend,ECharts.Net.ChartComponent.ChartGrid,System.String,System.Boolean,System.String)">
             <summary>
             多维条形图数据处理
             </summary>
@@ -2590,6 +2596,7 @@
             <param name="chartGrid">直角坐标系内绘图网格</param>
             <param name="chartSubTitle">副标题文本，默认值：''，'\n'指定换行</param>
             <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
+            <param name="dateTimeFormat"></param>
             <returns>图表所有数据</returns>
         </member>
         <member name="T:ECharts.Net.ChartSeries.ChartChordSeries">

@@ -7,7 +7,7 @@
     <Description>Based on ECharts(https://echarts.baidu.com/echarts2/doc/doc.html) tool library,support .NET Framework and .NET Core</Description>
     <AssemblyName>ECharts.Net</AssemblyName>
     <RootNamespace>ECharts.Net</RootNamespace>
-    <Version>1.1</Version>
+    <Version>1.1.1</Version>
     <PackageProjectUrl>https://xhanb.github.io/ECharts.Net/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xhanb/ECharts.Net</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

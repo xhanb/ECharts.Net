@@ -13,14 +13,15 @@ namespace ECharts.Net
         /// <summary>
         /// 饼状图数据处理
         /// </summary>
-        /// <param name="lengendData">图例数据</param>
         /// <param name="seriesData">图表数据</param>
+        /// <param name="lengendData">图例数据</param>
         /// <param name="isShowLengend">是否开启图例</param>
         /// <param name="chartTitle">主标题文本，默认值：''，'\n'指定换行</param>
         /// <param name="chartSubTitle"> 副标题文本，默认值：''，'\n'指定换行</param>
         /// <param name="isCalculable"> 是否启用拖拽重计算特性，默认关闭</param>
+        /// <param name="dateTimeFormat"></param>
         /// <returns></returns>
-        public static string ChartPieDataProcess(IEnumerable<ChartPieSeries> seriesData, List<string> lengendData, bool isShowLengend = false, string chartTitle = null, string chartSubTitle = null, bool isCalculable = false)
+        public static string ChartPieDataProcess(IEnumerable<ChartPieSeries> seriesData, List<string> lengendData, bool isShowLengend = false, string chartTitle = null, string chartSubTitle = null, bool isCalculable = false, string dateTimeFormat = "yyyy-MM-dd")
         {
             //标题
             var title = new ChartTitle()
@@ -49,7 +50,7 @@ namespace ECharts.Net
                 legend = chartLegend,
                 series = seriesDatas
             };
-            return jsonData.ToJson();
+            return jsonData.ToJson(dateTimeFormat);
         }
 
         /// <summary>
@@ -64,8 +65,9 @@ namespace ECharts.Net
         /// <param name="chartSubTitle">副标题文本，默认值：""，"\n"指定换行</param>
         /// <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
         /// <param name="chartYAxisName">Y轴名称</param>
+        /// <param name="dateTimeFormat"></param>
         /// <returns>图表所有数据</returns>
-        public static string ChartLineDataProcess(string chartTitle, string fm, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, string chartYAxisName = null)
+        public static string ChartLineDataProcess(string chartTitle, string fm, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, string chartYAxisName = null, string dateTimeFormat = "yyyy-MM-dd")
         {
             //标题
             var title = new ChartTitle()
@@ -115,7 +117,7 @@ namespace ECharts.Net
                 yAxis = chartYAxis,
                 series = seriesDatas
             };
-            return jsonData.ToJson();
+            return jsonData.ToJson(dateTimeFormat);
         }
 
         /// <summary>
@@ -131,8 +133,9 @@ namespace ECharts.Net
         /// <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
         /// <param name="chartYAxisName">Y轴名称</param>
         /// <param name="chartTimeline">时间轴</param>
+        /// <param name="dateTimeFormat"></param>
         /// <returns>图表所有数据</returns>
-        public static string TimeLineChartLineDataProcess(string chartTitle, string fm, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, string chartYAxisName = null, ChartTimeline chartTimeline = null)
+        public static string TimeLineChartLineDataProcess(string chartTitle, string fm, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, string chartYAxisName = null, ChartTimeline chartTimeline = null, string dateTimeFormat = "yyyy-MM-dd")
         {
             //标题
             var title = new ChartTitle()
@@ -179,7 +182,7 @@ namespace ECharts.Net
                 timeline = chartTimeline,//时间轴设置
                 options = chartOptions
             };
-            return jsonData.ToJson();
+            return jsonData.ToJson(dateTimeFormat);
         }
 
         /// <summary>
@@ -194,8 +197,9 @@ namespace ECharts.Net
         /// <param name="chartSubTitle">副标题文本，默认值：''，'\n'指定换行</param>
         /// <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
         /// <param name="chartYAxisName">Y轴名称</param>
+        /// <param name="dateTimeFormat"></param>
         /// <returns>图表所有数据</returns>
-        public static string ChartBarDataProcess(string chartTitle, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, ChartGrid chartGrid, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, string chartYAxisName = null)
+        public static string ChartBarDataProcess(string chartTitle, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, ChartGrid chartGrid, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, string chartYAxisName = null, string dateTimeFormat = "yyyy-MM-dd")
         {
             //标题
             var title = new ChartTitle()
@@ -245,7 +249,7 @@ namespace ECharts.Net
                 yAxis = chartYAxis,
                 series = seriesDatas
             };
-            return jsonData.ToJson();
+            return jsonData.ToJson(dateTimeFormat);
         }
 
         /// <summary>
@@ -260,8 +264,9 @@ namespace ECharts.Net
         /// <param name="isShowLengend"></param>
         /// <param name="chartSubTitle"></param>
         /// <param name="isCalculable"></param>
+        /// <param name="dateTimeFormat"></param>
         /// <returns></returns>
-        public static string ChartBarAndLineDataProcess(string chartTitle, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, List<ChartAxis> chartYaxis, ChartGrid chartGrid, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false)
+        public static string ChartBarAndLineDataProcess(string chartTitle, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, List<ChartAxis> chartYaxis, ChartGrid chartGrid, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, string dateTimeFormat = "yyyy-MM-dd")
         {
             //标题
             var title = new ChartTitle()
@@ -303,7 +308,7 @@ namespace ECharts.Net
                 yAxis = chartYAxis,
                 series = seriesDatas
             };
-            return jsonData.ToJson();
+            return jsonData.ToJson(dateTimeFormat);
         }
 
 
@@ -322,8 +327,9 @@ namespace ECharts.Net
         /// <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
         /// <param name="isShowY1AxisTick">是否显示Y轴坐标轴小标记</param>
         /// <param name="isShowY1AxisLine">是否显示坐标轴线</param>
+        /// <param name="dateTimeFormat"></param>
         /// <returns>图表所有数据</returns>
-        public static string ChartTiaoBarDataProcess(string chartTitle, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, ChartGrid chartGrid, bool isShowX = false, bool isShowY = true, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, bool isShowY1AxisTick = false, bool isShowY1AxisLine = false)
+        public static string ChartTiaoBarDataProcess(string chartTitle, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, List<string> lengendData, ChartGrid chartGrid, bool isShowX = false, bool isShowY = true, bool isShowLengend = false, string chartSubTitle = null, bool isCalculable = false, bool isShowY1AxisTick = false, bool isShowY1AxisLine = false, string dateTimeFormat = "yyyy-MM-dd")
         {
             //标题
             var title = new ChartTitle()
@@ -376,7 +382,7 @@ namespace ECharts.Net
                 yAxis = chartYAxis,
                 series = seriesDatas
             };
-            return jsonData.ToJson();
+            return jsonData.ToJson(dateTimeFormat);
         }
 
         /// <summary>
@@ -389,8 +395,9 @@ namespace ECharts.Net
         /// <param name="chartGrid">直角坐标系内绘图网格</param>
         /// <param name="chartSubTitle">副标题文本，默认值：''，'\n'指定换行</param>
         /// <param name="isCalculable">是否启用拖拽重计算特性，默认关闭</param>
+        /// <param name="dateTimeFormat"></param>
         /// <returns>图表所有数据</returns>
-        public static string ChartDuoWeiTiaoBarDataProcess(string chartTitle, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, ChartLegend chartLegend, ChartGrid chartGrid, string chartSubTitle = null, bool isCalculable = false)
+        public static string ChartDuoWeiTiaoBarDataProcess(string chartTitle, List<object> chartAxisData, IEnumerable<ChartRightangleSeries> seriesData, ChartLegend chartLegend, ChartGrid chartGrid, string chartSubTitle = null, bool isCalculable = false, string dateTimeFormat = "yyyy-MM-dd")
         {
             //标题
             var title = new ChartTitle()
@@ -459,7 +466,7 @@ namespace ECharts.Net
                 yAxis = chartYAxis,
                 series = seriesDatas
             };
-            return jsonData.ToJson();
+            return jsonData.ToJson(dateTimeFormat);
         }
     }
 }
