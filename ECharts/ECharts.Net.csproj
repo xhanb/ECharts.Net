@@ -1,27 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net45;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Authors>xhanb</Authors>
     <Company />
     <Description>Based on ECharts(https://echarts.baidu.com/echarts2/doc/doc.html) tool library,support .NET Framework and .NET Core</Description>
     <AssemblyName>ECharts.Net</AssemblyName>
     <RootNamespace>ECharts.Net</RootNamespace>
-    <Version>1.0.9</Version>
+    <Version>1.1</Version>
     <PackageProjectUrl>https://xhanb.github.io/ECharts.Net/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xhanb/ECharts.Net</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageReleaseNotes>use System.Text.json serialize an object to a JSON string when project based on .Net Standard</PackageReleaseNotes>
+    <PackageReleaseNotes>Use System.Text.json serialize an object to a JSON string when project based on .Net Standard.
+When serializing Json, you can customize the date format.</PackageReleaseNotes>
     <PackageTags>echart,ECharts,ECharts.Net</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/xhanb/ECharts.Net/master/ECharts/logo.png</PackageIconUrl>
     <DocumentationFile>D:\Projects\ECharts\ECharts\ECharts.Net.xml</DocumentationFile>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-  </ItemGroup>
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
@@ -30,8 +28,7 @@
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="System.Text.Json">
-      <Version>4.6.0-preview6.19303.8</Version>
+      <Version>4.6.0</Version>
     </PackageReference>
   </ItemGroup>
-
 </Project>

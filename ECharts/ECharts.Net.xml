@@ -3507,17 +3507,32 @@
             是否启用图例（legend）hover时的联动响应（高亮显示）
             </summary>
         </member>
+        <member name="T:ECharts.Net.DateTimeConverterUsingDateTimeParse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ECharts.Net.DateTimeConverterUsingDateTimeParse.dateTimeFormat">
+            <summary>
+            日期格式
+            </summary>
+        </member>
+        <member name="M:ECharts.Net.DateTimeConverterUsingDateTimeParse.#ctor(System.String)">
+            <summary>
+            ctor
+            </summary>      
+            <param name="dateTimeFormat"></param>
+        </member>
         <member name="T:ECharts.Net.JsonHelper">
             <summary>
             json辅助
             </summary>
         </member>
-        <member name="M:ECharts.Net.JsonHelper.ToJson(System.Object)">
-            <summary>
-            object转json（包含日期格式处理）
-            </summary>  
-            <param name="obj">object</param>
-            <returns></returns>
+        <member name="M:ECharts.Net.JsonHelper.ToJson(System.Object,System.String)">
+            <summary>Converts to json.</summary>
+            <param name="obj">The object.</param>
+            <param name="dateTimeFormat">The date time format.</param>
+            <returns>System.String.</returns>
         </member>
     </members>
 </doc>

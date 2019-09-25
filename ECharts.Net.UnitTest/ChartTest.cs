@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using ECharts.Net.ChartSeries;
 using Xunit;
@@ -37,6 +38,14 @@ namespace ECharts.Net.UnitTest
             cpss.Add(cps);
             var str = ChartOpertation.ChartPieDataProcess(cpss, legend, true, "pie demo", "subtext", true);
             Assert.NotNull(str);
+        }
+
+        [Fact]
+        public void JsonTest()
+        {
+            var testData = new {Name = "test", Qwe = 12, Asd = DateTime.Now};
+            var aaa = testData.ToJson();
+            Assert.NotNull(aaa);
         }
     }
 }
