@@ -46,7 +46,13 @@ namespace ECharts.Net
         {
             var options = new JsonSerializerOptions() { IgnoreNullValues = true, WriteIndented = true };
             options.Converters.Add(new DateTimeConverterUsingDateTimeParse(dateTimeFormat));
+            Configure?.Invoke(options);
             return JsonSerializer.Serialize(obj, options);
         }
+        
+		/// <summary>
+		/// 修改配置的注入口
+		/// </summary>
+		public static Action<JsonSerializerOptions> Configure;
     }
 }
